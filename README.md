@@ -21,23 +21,22 @@ Users can view upcoming events and RSVP (Yes/No/Maybe).
 
 ---
 
-# 🗄️ Database Design
+### 🗄️ Database Design
 
 **Tables**
-
- 1. **Users**
+ **1. Users**
     - `id` (PK)
     - `name`
     - `email`
     - `created_at`
- 2. **Events**
+ **2. Events**
     - `id` (PK)
     - `title`
     - `description`
     - `date`
     - `city`
     - `created_by` (FK → Users.id)
- 3. RSVPs
+ **3. RSVPs**
     - `id` (PK)
     - `user_id` (FK → Users.id)
     - `event_id` (FK → Events.id)
@@ -47,13 +46,13 @@ Users can view upcoming events and RSVP (Yes/No/Maybe).
 
 ---
 
-# 📊 ER Diagram
+### 📊 ER Diagram
 
 ![alt ER Diagram Image](/screenshots/tables.png)
 
 ---
 
-# 🧪 Sample Data
+### 🧪 Sample Data
 
 - 10 Users
 ![alt Sample Entries](/screenshots/users_table_entry.png)
@@ -66,7 +65,7 @@ Users can view upcoming events and RSVP (Yes/No/Maybe).
 
 ---
 
-# 🚀 Getting Started
+### 🚀 Getting Started
 
 **Prerequisites**
 
@@ -107,7 +106,7 @@ App runs on `http://localhost:3000`.
 
 ---
 
-# 📖 Design Choices
+### 📖 Design Choices
 
 - RSVP stored in a **separate table** → allows many-to-many relationship between users and events.
 
@@ -120,6 +119,7 @@ App runs on `http://localhost:3000`.
 ### 👩‍💻 Author
 
 **Tanmay Gupta**
+
 📧 guptatanmay1008@gmail.com
 
 
