@@ -69,6 +69,18 @@ Users can view upcoming events and RSVP (Yes/No/Maybe).
 
 
 
+
+## 📜 Schema Dump
+
+The SQL schema used for this project:
+
+```sql
+-- Users, Events, and RSVPs schema with sample data
+
+![Schema.sql](/schema.sql)
+
+
+
 # 🚀 Getting Started
 
 **Prerequisites**
