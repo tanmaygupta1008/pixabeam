@@ -89,7 +89,7 @@ The SQL schema used for this project:
 
 **1️⃣ Clone Repo**
 ```bash
-git clone https://github.com/your-username/event-rsvp-platform.git
+git clone https://github.com/tanmaygupta1008/pixabeam.git
 cd pixabeam
 ```
 
