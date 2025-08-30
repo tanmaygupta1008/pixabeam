@@ -1,51 +1,57 @@
 <!-- This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). -->
 
+---
+
 ## 🎉 Event RSVP Platform
 
 A simple event management platform built with Supabase (Postgres backend) and Next.js frontend.
 Users can view upcoming events and RSVP (Yes/No/Maybe).
 
+---
 
 ## 📌 Features
 
-- 🔑 Users table – stores registered users.
-- 📅 Events table – users can create events.
-- 📨 RSVPs table – users can RSVP to events (Yes/No/Maybe).
-- 🎨 Next.js frontend –
+- **🔑 Users table –** stores registered users.
+- **📅 Events table –** users can create events.
+- **📨 RSVPs table –** users can RSVP to events (Yes/No/Maybe).
+- **🎨 Next.js frontend –**
     - List all upcoming events.
     - Change RSVP status for a logged-in user (sample login hardcoded).
-- ☁️ Deployed on Vercel with Supabase backend.
+- **☁️ Deployed on Vercel** with Supabase backend.
 
+---
 
 ## 🗄️ Database Design
 
 **Tables**
 
  1. **Users**
-    - id (PK)
-    - name
-    - email
-    - created_at
+    - `id` (PK)
+    - `name`
+    - `email`
+    - `created_at`
  2. **Events**
-    - id (PK)
-    - title
-    - description
-    - date
-    - city
-    - created_by (FK → Users.id)
+    - `id` (PK)
+    - `title`
+    - `description`
+    - `date`
+    - `city`
+    - `created_by` (FK → Users.id)
  3. RSVPs
-    - id (PK)
-    - user_id (FK → Users.id)
-    - event_id (FK → Events.id)
-    - status (Yes/No/Maybe)
+    - `id` (PK)
+    - `user_id` (FK → Users.id)
+    - `event_id` (FK → Events.id)
+    - `status` (Yes/No/Maybe)
 
 ✅ **Referential integrity:** Deleting a user cascades deletes to their RSVPs.
 
+---
 
 ## 📊 ER Diagram
 
 ![alt ER Diagram Image](/screenshots/tables.png)
 
+---
 
 ## 🧪 Sample Data
 
@@ -58,19 +64,18 @@ Users can view upcoming events and RSVP (Yes/No/Maybe).
 - 20 RSVPs
 ![alt Sample Entries](/screenshots/rsvps_table_entry.png)
 
+---
 
 ## 🚀 Getting Started
 
 **Prerequisites**
 
 - [Link Node.js](https://nodejs.org/en) v16+
-
 - [Link Node.js](https://supabase.com/)
-
 - [Link Vercel account](https://vercel.com/)
 
 
-1**️⃣ Clone Repo**
+**1️⃣ Clone Repo**
 ```bash
 git clone https://github.com/your-username/event-rsvp-platform.git
 cd event-rsvp-platform
@@ -83,7 +88,7 @@ npm install
 
 **3️⃣ Environment Variables**
 
-Create a .env.local file with your Supabase credentials:
+Create a `.env.local` file with your Supabase credentials:
 
 ```bash
 NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
@@ -97,10 +102,10 @@ npm run dev
 ```
 
 
-App runs on http://localhost:3000.
+App runs on `http://localhost:3000`.
 
 
-
+---
 
 ## 📖 Design Choices
 
@@ -110,6 +115,7 @@ App runs on http://localhost:3000.
 
 - Minimal schema with constraints for referential integrity.
 
+---
 
 ## 👩‍💻 Author
 
@@ -117,9 +123,11 @@ App runs on http://localhost:3000.
 📧 guptatanmay1008@gmail.com
 
 
+---
 
 *✨ Feel free to fork, explore, and enhance this project!*
 
+---
 
 <!-- First, run the development server:
 
