@@ -24,6 +24,7 @@ Users can view upcoming events and RSVP (Yes/No/Maybe).
 ### 🗄️ Database Design
 
 **Tables**
+
 **1. Users**
     - `id` (PK)
     - `name`
