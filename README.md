@@ -21,7 +21,7 @@ Users can view upcoming events and RSVP (Yes/No/Maybe).
 
 ---
 
-### 🗄️ Database Design
+<!-- ### 🗄️ Database Design
 
 **Tables**
 
@@ -45,7 +45,36 @@ Users can view upcoming events and RSVP (Yes/No/Maybe).
 
 ✅ **Referential integrity:** Deleting a user cascades deletes to their RSVPs.
 
+--- -->
+
+
+### 🗄️ Database Design
+
+**Tables**
+**1. Users**
+- `id` (PK)
+- `name`
+- `email`
+- `created_at`
+
+**2. Events**
+- `id` (PK)
+- `title`
+- `description`
+- `date`
+- `city`
+- `created_by` (FK → Users.id)
+
+**3. RSVPs**
+- `id` (PK)
+- `user_id` (FK → Users.id)
+- `event_id` (FK → Events.id)
+- `status` (Yes/No/Maybe)
+
+✅ **Referential integrity:** Deleting a user cascades deletes to their RSVPs.
+
 ---
+
 
 ### 📊 ER Diagram
 
