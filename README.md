@@ -117,7 +117,7 @@ App runs on `http://localhost:3000`.
 
 ---
 
-# 👩‍💻 Author
+### 👩‍💻 Author
 
 **Tanmay Gupta**
 📧 guptatanmay1008@gmail.com
