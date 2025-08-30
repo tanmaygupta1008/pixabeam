@@ -1,13 +1,13 @@
 <!-- This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). -->
 
----
+
 
 # 🎉 Event RSVP Platform
 
 A simple event management platform built with Supabase (Postgres backend) and Next.js frontend.
 Users can view upcoming events and RSVP (Yes/No/Maybe).
 
----
+
 
 # 📌 Features
 
@@ -19,36 +19,9 @@ Users can view upcoming events and RSVP (Yes/No/Maybe).
     - Change RSVP status for a logged-in user (sample login hardcoded).
 - **☁️ Deployed on Vercel** with Supabase backend.
 
----
-
-<!-- ### 🗄️ Database Design
-
-**Tables**
-
-**1. Users**
-    - `id` (PK)
-    - `name`
-    - `email`
-    - `created_at`
-**2. Events**
-    - `id` (PK)
-    - `title`
-    - `description`
-    - `date`
-    - `city`
-    - `created_by` (FK → Users.id)
-**3. RSVPs**
-    - `id` (PK)
-    - `user_id` (FK → Users.id)
-    - `event_id` (FK → Events.id)
-    - `status` (Yes/No/Maybe)
-
-✅ **Referential integrity:** Deleting a user cascades deletes to their RSVPs.
-
---- -->
 
 
-### 🗄️ Database Design
+# 🗄️ Database Design
 
 **Tables**
 **1. Users**
@@ -73,35 +46,36 @@ Users can view upcoming events and RSVP (Yes/No/Maybe).
 
 ✅ **Referential integrity:** Deleting a user cascades deletes to their RSVPs.
 
----
 
 
-### 📊 ER Diagram
+# 📊 ER Diagram
 
 ![alt ER Diagram Image](/screenshots/tables.png)
 
----
 
-### 🧪 Sample Data
+# 🧪 Sample Data
 
 - 10 Users
-![alt Sample Entries](/screenshots/users_table_entry.png)
-
 - 5 Events
-![alt Sample Entries](/screenshots/events_table_entry.png)
-
 - 20 RSVPs
-![alt Sample Entries](/screenshots/rsvps_table_entry.png)
 
 ---
 
-### 🚀 Getting Started
+### Images : 
+
+![alt Sample Entries](/screenshots/users_table_entry.png)
+![alt Sample Entries](/screenshots/events_table_entry.png)
+![alt Sample Entries](/screenshots/rsvps_table_entry.png)
+
+
+
+# 🚀 Getting Started
 
 **Prerequisites**
 
-- [Link Node.js](https://nodejs.org/en) v16+
-- [Link Node.js](https://supabase.com/)
-- [Link Vercel account](https://vercel.com/)
+- [Node.js](https://nodejs.org/en) v16+
+- [Node.js](https://supabase.com/)
+- [Vercel account](https://vercel.com/)
 
 
 **1️⃣ Clone Repo**
