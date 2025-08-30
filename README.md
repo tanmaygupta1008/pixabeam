@@ -24,19 +24,19 @@ Users can view upcoming events and RSVP (Yes/No/Maybe).
 ### 🗄️ Database Design
 
 **Tables**
- **1.** **Users**
+**1. Users**
     - `id` (PK)
     - `name`
     - `email`
     - `created_at`
- **2.** **Events**
+**2. Events**
     - `id` (PK)
     - `title`
     - `description`
     - `date`
     - `city`
     - `created_by` (FK → Users.id)
- **3. RSVPs**
+**3. RSVPs**
     - `id` (PK)
     - `user_id` (FK → Users.id)
     - `event_id` (FK → Events.id)
