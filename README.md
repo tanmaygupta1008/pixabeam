@@ -90,7 +90,7 @@ The SQL schema used for this project:
 **1️⃣ Clone Repo**
 ```bash
 git clone https://github.com/your-username/event-rsvp-platform.git
-cd event-rsvp-platform
+cd pixabeam
 ```
 
 **2️⃣ Install Dependencies**
